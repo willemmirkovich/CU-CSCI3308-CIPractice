@@ -1,4 +1,5 @@
 language: c
+script: make dep && make && make test
 compiler: -gcc
-script: make clean && make && make test
+dep: sudo apt-get install check
 
