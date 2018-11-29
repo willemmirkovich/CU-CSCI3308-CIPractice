@@ -29,3 +29,8 @@ clean:
 	$(RM) *.o
 	$(RM) geometry_test
 	$(RM) *~
+
+.PHONY: test
+
+test: geometry_test
+	 ./geometry_test
